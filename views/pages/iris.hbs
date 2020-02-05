@@ -1,0 +1,28 @@
+<div class="container">
+    <h1 class="text-center"> Machine learning: {{ title }} </h1>
+
+    <table class="table table-hover table-sm table-dark text-center">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>sepal_length (x1)</th>
+                <th>sepal_width (x2)</th>
+                <th>petal_length (y1)</th>
+                <th>petal_width (y2)</th>
+                <th>species</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each result}}
+                <tr>
+                    <td>{{ this.ID }}</td>
+                    <td>{{ this.sepal_length }}</td>
+                    <td>{{ this.sepal_width }}</td>
+                    <td>{{ this.petal_length }}</td>
+                    <td>{{ this.petal_width }}</td>
+                    <td>{{ this.species }}</td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

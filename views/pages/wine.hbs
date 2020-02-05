@@ -1,0 +1,46 @@
+<div class="container">
+    <h1 class="text-center"> Machine learning: {{ title }} </h1>
+
+    <table class="table table-hover table-sm table-dark text-center">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Alcohol</th>
+                <th>MalicAcid</th>
+                <th>Ash</th>
+                <th>Acl</th>
+                <th>Mg</th>
+                <th>Phenols</th>
+                <th>Flavanoids</th>
+                <th>NonflavanoidPhenols</th>
+                <th>Proanth</th>
+                <th>ColorInt</th>
+                <th>Hue</th>
+                <th>OD</th>
+                <th>Proline</th>
+                <th>Wine</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each result}}
+                <tr>
+                    <td>{{ this.ID }}</td>
+                    <td>{{ this.Alcohol }}</td>
+                    <td>{{ this.MalicAcid }}</td>
+                    <td>{{ this.Ash }}</td>
+                    <td>{{ this.Acl }}</td>
+                    <td>{{ this.Mg }}</td>
+                    <td>{{ this.Phenols }}</td>
+                    <td>{{ this.Flavanoids }}</td>
+                    <td>{{ this.NonflavanoidPhenols }}</td>
+                    <td>{{ this.Proanth }}</td>
+                    <td>{{ this.ColorInt }}</td>
+                    <td>{{ this.Hue }}</td>
+                    <td>{{ this.OD }}</td>
+                    <td>{{ this.Proline }}</td>
+                    <td>{{ this.Wine }}</td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
