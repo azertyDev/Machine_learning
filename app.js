@@ -9,7 +9,9 @@ const paginate = require('handlebars-paginate');
 
 Handlebars.registerHelper('paginate', paginate);
 
+// Wine router
 const wineRouter = require('./routes/wine');
+// Iris router
 const irisRouter = require('./routes/iris');
 
 app.use('/wine', wineRouter);
